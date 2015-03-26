@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B809BA51AC4070000E618F0 /* TestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B809BA31AC4070000E618F0 /* TestScene.cpp */; };
+		0B809BAB1AC410E700E618F0 /* Test.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B809BAA1AC410E700E618F0 /* Test.plist */; };
+		0BBB3EF51AC3F92B00CCC35C /* DataLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BBB3EF31AC3F92B00CCC35C /* DataLoader.cpp */; };
+		0BBB3EF91AC3FE2B00CCC35C /* zh_cn.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BBB3EF81AC3FE2B00CCC35C /* zh_cn.plist */; };
 		15A3D8FF1682F7D5002FB0C5 /* b2BroadPhase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15A3D88B1682F7D5002FB0C5 /* b2BroadPhase.cpp */; };
 		15A3D9001682F7D5002FB0C5 /* b2CollideCircle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15A3D88D1682F7D5002FB0C5 /* b2CollideCircle.cpp */; };
 		15A3D9011682F7D5002FB0C5 /* b2CollideEdge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15A3D88E1682F7D5002FB0C5 /* b2CollideEdge.cpp */; };
@@ -281,7 +285,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B809BA31AC4070000E618F0 /* TestScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestScene.cpp; sourceTree = "<group>"; };
+		0B809BA41AC4070000E618F0 /* TestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestScene.h; sourceTree = "<group>"; };
+		0B809BAA1AC410E700E618F0 /* Test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Test.plist; sourceTree = "<group>"; };
 		0BBB3EF21AC3F82200CCC35C /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		0BBB3EF31AC3F92B00CCC35C /* DataLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataLoader.cpp; sourceTree = "<group>"; };
+		0BBB3EF41AC3F92B00CCC35C /* DataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataLoader.h; sourceTree = "<group>"; };
+		0BBB3EF81AC3FE2B00CCC35C /* zh_cn.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = zh_cn.plist; sourceTree = "<group>"; };
 		15A3D87E1682F7B3002FB0C5 /* cocos2dx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2dx.xcodeproj; path = ../../../cocos2dx/proj.ios/cocos2dx.xcodeproj; sourceTree = "<group>"; };
 		15A3D8891682F7D5002FB0C5 /* Box2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box2D.h; sourceTree = "<group>"; };
 		15A3D88B1682F7D5002FB0C5 /* b2BroadPhase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = b2BroadPhase.cpp; sourceTree = "<group>"; };
@@ -859,6 +869,8 @@
 		0BBB3EEF1AC3F7F100CCC35C /* DataLoader */ = {
 			isa = PBXGroup;
 			children = (
+				0BBB3EF31AC3F92B00CCC35C /* DataLoader.cpp */,
+				0BBB3EF41AC3F92B00CCC35C /* DataLoader.h */,
 			);
 			name = DataLoader;
 			sourceTree = "<group>";
@@ -868,6 +880,8 @@
 			children = (
 				1AFAF8B516D35DE700DB1158 /* HelloWorldScene.cpp */,
 				1AFAF8B616D35DE700DB1158 /* HelloWorldScene.h */,
+				0B809BA31AC4070000E618F0 /* TestScene.cpp */,
+				0B809BA41AC4070000E618F0 /* TestScene.h */,
 			);
 			name = Scene;
 			sourceTree = "<group>";
@@ -877,6 +891,21 @@
 			children = (
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		0BBB3EF61AC3FA0200CCC35C /* UserData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UserData;
+			sourceTree = "<group>";
+		};
+		0BBB3EF71AC3FDDE00CCC35C /* Lang */ = {
+			isa = PBXGroup;
+			children = (
+				0BBB3EF81AC3FE2B00CCC35C /* zh_cn.plist */,
+			);
+			name = Lang;
 			sourceTree = "<group>";
 		};
 		15A3D87F1682F7B3002FB0C5 /* Products */ = {
@@ -1357,6 +1386,7 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0BBB3EF61AC3FA0200CCC35C /* UserData */,
 				0BBB3EF11AC3F80900CCC35C /* Model */,
 				0BBB3EF01AC3F80300CCC35C /* Scene */,
 				0BBB3EEF1AC3F7F100CCC35C /* DataLoader */,
@@ -1973,6 +2003,7 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0BBB3EF71AC3FDDE00CCC35C /* Lang */,
 				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
 				1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */,
 				1AFAF8BB16D35E4900DB1158 /* HelloWorld.png */,
@@ -1983,6 +2014,7 @@
 				D4EF949F15BD2D9800D803EB /* Icon-144.png */,
 				D4EF949915BD2D8B00D803EB /* Icon-57.png */,
 				D4EF949D15BD2D9600D803EB /* Icon-72.png */,
+				0B809BAA1AC410E700E618F0 /* Test.plist */,
 			);
 			name = Resources;
 			path = ../Resources;
@@ -2059,10 +2091,12 @@
 			files = (
 				7855E0E1153FEF240059DD9A /* Default.png in Resources */,
 				D4EF949A15BD2D8B00D803EB /* Icon-57.png in Resources */,
+				0B809BAB1AC410E700E618F0 /* Test.plist in Resources */,
 				D4EF949C15BD2D8E00D803EB /* Icon-114.png in Resources */,
 				D4EF949E15BD2D9600D803EB /* Icon-72.png in Resources */,
 				D4EF94A015BD2D9800D803EB /* Icon-144.png in Resources */,
 				D41A0AD1160F154A004552AE /* Default-568h@2x.png in Resources */,
+				0BBB3EF91AC3FE2B00CCC35C /* zh_cn.plist in Resources */,
 				D446FD6E16102124000ADA7B /* Default@2x.png in Resources */,
 				15A3D9961682F7F9002FB0C5 /* CMakeLists.txt in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
@@ -2186,6 +2220,7 @@
 				15A3D9B11682F7F9002FB0C5 /* cpSweep1D.c in Sources */,
 				15C0B588196D412F007F909D /* ImageViewReader.cpp in Sources */,
 				15A3D9B21682F7F9002FB0C5 /* cpVect.c in Sources */,
+				0B809BA51AC4070000E618F0 /* TestScene.cpp in Sources */,
 				15A3DA311682F826002FB0C5 /* CCBAnimationManager.cpp in Sources */,
 				15C0B557196D412F007F909D /* CCProcessBase.cpp in Sources */,
 				15A3DA321682F826002FB0C5 /* CCBFileLoader.cpp in Sources */,
@@ -2204,6 +2239,7 @@
 				15A3DA3A1682F826002FB0C5 /* CCData.cpp in Sources */,
 				15A3DA3B1682F826002FB0C5 /* CCLabelBMFontLoader.cpp in Sources */,
 				15C0B556196D412F007F909D /* CCArmatureAnimation.cpp in Sources */,
+				0BBB3EF51AC3F92B00CCC35C /* DataLoader.cpp in Sources */,
 				15C0B568196D412F007F909D /* CCUtilMath.cpp in Sources */,
 				15A3DA3C1682F826002FB0C5 /* CCLabelTTFLoader.cpp in Sources */,
 				15C0B572196D412F007F909D /* CocosGUI.cpp in Sources */,

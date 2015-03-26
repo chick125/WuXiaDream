@@ -9,7 +9,7 @@
 #ifndef WuXiaDream_Common_h
 #define WuXiaDream_Common_h
 
-#include "cococ2d.h"
+#include "cocos2d.h"
 #include "cocos-ext.h"
 USING_NS_CC;
 USING_NS_CC_EXT;
